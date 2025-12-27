@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  *{
+     font-family: "Poppins", sans-serif;
+  }
+  #product-container h1{
+    text-transform: capitalize;
+  }
+   #product-container img{
+    transition:0.30s;
+   }
+</style>
+</head>
+<body>
+ <!-- Responsive Navbar -->
+    <nav  class="bg-green-200 p-3 flex items-center justify-between shdow-xl sticky top-0  z-10">
+        <h1 class="text-2xl">Greenden</h1>
+                  
+   <div id="menuicon" class=" md:hidden"> <i  class="fa-solid fa-bars" id="menu"></i></div>
+
+
+  
+
+        <ul class=" flex gap-5 text-gray-600 hidden md:flex ">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./products.html">Products</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">contact</a>
+            </li>
+            
+           
+    </nav>
+
+
+
+
+        <!-- side Navbar -->
+
+           <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 right-0 "  style="width: 50%;height: 100vh; right:-50%;">
+                     <div class="text-right p-5">
+                       <p id="closenav" class="inline cursor-pointer">X</p>
+                     </div>
+                     
+        <ul class=" flex flex-col  items-center  gap-10 text-gray-600 ">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./products.html">Products</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">contact</a>
+            </li>
+        </ul>
+ 
+</section>
+
+
+    <!-- our product -->
+
+    <section class="p-4 text-center ">
+        <h1 class="font-blod mt-5 text-3xl text-center" style="font-size:40px !important;font-weight:600;color:green;">Our Products</h1>
+
+       
+        <input id="search" type=" search" style="width: 80%;height:50px;border-radius:10px;border:none;outline:none;padding-left:10px;margin-top:15px;margin-bottom:20px;" class="bg-gray-100" placeholder="Search for a Product..." >
+        
+
+      
+        
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5 ">
+        <div >
+            <img src="./image/Untitled design (1).png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+            <h1>  lily Plant</h1>
+            <p>$20</p>
+        </div>
+
+        <div>
+            <img src="./image/Untitled design (2).png" alt="" class="inline  hover hover:shdow-xl  transform hover:-translate-y-2">
+             <h1>rose Plant</h1>
+             <p>$20</p>
+        </div>
+
+        <div>
+            <img src="./image/Untitled design (3).png" alt="" class="inline hover hover:shdow-xl transform hover:-translate-y-2">
+             
+             <h1>New pet Plant</h1>
+            <p>$20</p>
+        </div>
+
+        <div>
+            <img src="./image/untitled design (4).png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>leaf Plant</h1>
+            <p>$20</p>
+        </div>
+
+           
+        <div>
+            <img src="./image/new image/1.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Philodendron plant</h1>
+            <p>$20</p>
+        </div>
+
+
+          <div>
+            <img src="./image/new image/2.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Spider Plant</h1>
+            <p>$20</p>
+        </div>
+
+          <div>
+            <img src="./image/new image/3.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Golden Money Plant</h1>
+            <p>$20</p>
+        </div>
+
+          <div>
+            <img src="./image/new image/4.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Philodendron Plant</h1>
+            <p>$20</p>
+        </div>
+
+
+          <div>
+            <img src="./image/new image/5.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+            
+             <h1> Aloe Vera plants</h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/6.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Syngnium Wendlandii Plant</h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/7.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Philodendron  Golden Plant</h1>
+            <p>$20</p>
+        </div>
+
+        
+       
+   
+
+        
+          <div>
+            <img src="./image/new image/8.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Variegated Rubber Plant </h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/9.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Peperomia Obtusifolia  Plant </h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/10.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Philodendron Moon Plant</h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/11.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Variegated Umbrella Plant </h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/12.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Cordyline Brown Plant</h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/13.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Peperomia Black Plant</h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/14.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+            <h1>Philodendron Florida  Plant </h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/15.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Dieffenbachia Camille Plant</h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/16.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Philodendron Plant</h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/17.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Aglaonema Lipstick Plant</h1>
+            <p>$20</p>
+        </div>
+
+       
+          <div>
+            <img src="./image/new image/18.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Pedilanthus Jurassic Plant</h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/19.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Areca Palm Sapling</h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/20.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Dracaena Gold  Plant </h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/21.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>N'joy Money Plant</h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/22.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Umbrella Tree Plant</h1>
+            <p>$20</p>
+        </div>
+        
+          <div>
+            <img src="./image/new image/23.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Syngonium plant</h1>
+            <p>$20</p>
+        </div>
+
+        
+          <div>
+            <img src="./image/new image/24.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Song of Jamaica Plant</h1>
+            <p>$20</p>
+        </div>
+
+            
+          <div>
+            <img src="./image/25.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Ring of Fire  Plant</h1>
+            <p>$20</p>
+        </div>
+
+            
+          <div>
+            <img src="./image/26.png" alt="" class="inline  hover hover:shdow-xl transform hover:-translate-y-2">
+             <h1>Philodendron Gloriosum Plant</h1>
+            <p>$20</p>
+        </div>
+
+
+    </div>
+    </section>
+
+  <!-- footer -->
+
+    <section class="bg-green-100  p-10 mt-5 flex flex-col gap-5">
+        <h1 class="text-3xl font-blod ">Greenden</h1>
+        <p>Greenden is your one-stop destination for fresh, healthy, and vibrant plants delivered straight to your home.  
+    We believe every space deserves a touch of green — bringing nature closer to you.</p>
+         <p> @2025 Greenden.com</p> 
+    </section>
+
+    <script src="./product.js"></script>
+
+</body>
+</html>

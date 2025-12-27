@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Greenden</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-8 rounded-lg shadow-md w-96">
+    <h2 class="text-2xl font-bold mb-6 text-center text-green-700">Login to Greenden</h2>
+
+    <form id="loginForm">
+      <input id="email" type="email" placeholder="Email" class="border p-2 w-full mb-4 rounded" required />
+      <input id="password" type="password" placeholder="Password" class="border p-2 w-full mb-4 rounded" required />
+      <button type="submit" class="bg-green-500 text-white w-full py-2 rounded hover:bg-green-600">Login</button>
+    </form>
+
+    <p class="text-sm text-center mt-4 text-gray-600">
+      Don’t have an account? <a href="#" class="text-green-600 hover:underline">Sign up</a>
+    </p>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById("loginForm");
+
+    loginForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      if (email && password) {
+        localStorage.setItem("user", email);
+        alert("Login successful!");
+        window.location.href = "index.html"; // redirect to home
+      } else {
+        alert("Please enter valid details");
+      }
+    });
+  </script>
+</body>
+</html>
